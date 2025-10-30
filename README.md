@@ -1,13 +1,13 @@
-# 🧩 @craftysoft/hooks
+# 🧩 craftysoft/hooks
 
 A lightweight collection of **essential React hooks** for modern frontend developers.
 
-## 📦 Installation
+##  Installation
 ```bash
 npm install @craftysoft/hooks
 ```
 
-## 🧠 Usage Example
+##  Usage Example
 ```tsx
 import { useLocalStorage, useDebounce } from "@craftysoft/hooks";
 
@@ -24,7 +24,7 @@ function App() {
 }
 ```
 
-## 🧰 Hooks List
+##  Hooks List
 - `useLocalStorage`
 - `useDebounce`
 - `useThrottle`
@@ -33,5 +33,5 @@ function App() {
 - `useMediaQuery`
 - `useWindowSize`
 
-## 🧾 License
+##  License
 MIT © Md Shah Aman Patwary
