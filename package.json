@@ -1,0 +1,45 @@
+{
+  "name": "@craftysoft/hooks",
+  "version": "1.0.1",
+  "description": "A lightweight collection of essential React hooks for modern web apps.",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup src/index.ts --format esm,cjs --dts",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "prepare": "npm run build"
+  },
+  "keywords": [
+    "react",
+    "hooks",
+    "craftysoft",
+    "usehooks",
+    "frontend"
+  ],
+  "author": "Md Shah Aman Patwary",
+  "license": "MIT",
+  "peerDependencies": {
+    "react": ">=17"
+  },
+  "sideEffects": false,
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "devDependencies": {
+    "@types/react": "^17.0.0",
+    "tsup": "^8.0.0",
+    "typescript": "^5.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/TAIJULAMAN/craftysoft-hooks"
+  }
+}
