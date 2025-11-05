@@ -1,11 +1,11 @@
-# 🧩 @craftysoft/hooks
+# Craftysoft Hooks
 
 A professional, developer-friendly, and production-ready **React custom hooks library** with 20+ high-utility hooks that improve developer productivity.
 
 [![npm version](https://img.shields.io/npm/v/@craftysoft/hooks.svg)](https://www.npmjs.com/package/@craftysoft/hooks)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-## ✨ Features
+## Features
 
 - 🎯 **20+ Production-Ready Hooks** - Carefully crafted hooks for common use cases
 - 📦 **Tree-Shakeable** - ESM support with zero dependencies (except React)
@@ -14,7 +14,7 @@ A professional, developer-friendly, and production-ready **React custom hooks li
 - 🌐 **SSR-Safe** - Works seamlessly with Next.js and other SSR frameworks
 - 🧪 **Well Tested** - Comprehensive test coverage with Vitest
 
-## 📦 Installation
+##  Installation
 
 ```bash
 npm install craftysoft-hooks
@@ -43,9 +43,9 @@ function App() {
 }
 ```
 
-## 📚 Hooks Documentation
+##  Hooks Documentation
 
-### 🔄 State Management Hooks
+###  State Management Hooks
 
 #### `useLocalStorage`
 
@@ -168,7 +168,7 @@ return (
 
 ---
 
-### 🌐 Browser Hooks
+###  Browser Hooks
 
 #### `useNetworkStatus`
 
@@ -275,7 +275,7 @@ return (
 
 ---
 
-### ✂️ Utility Hooks
+###  Utility Hooks
 
 #### `useClipboard`
 
@@ -368,7 +368,7 @@ return (
 
 ---
 
-### ⚙️ Performance Hooks
+###  Performance Hooks
 
 #### `useDebounce`
 
@@ -414,7 +414,7 @@ useEffect(() => {
 
 ---
 
-### 🌍 API Hooks
+###  API Hooks
 
 #### `useFetch`
 
@@ -436,7 +436,7 @@ return <div>{data?.name}</div>;
 
 ---
 
-### 🖱️ Interaction Hooks
+###  Interaction Hooks
 
 #### `useClickOutside`
 
@@ -504,7 +504,7 @@ useEventListener("click", handleClick, ref);
 
 ---
 
-## 🧪 Testing
+##  Testing
 
 Run tests with Vitest:
 
@@ -525,23 +525,23 @@ import { useLocalStorage } from "@craftysoft/hooks";
 const [value, setValue] = useLocalStorage<string>("key", "initial");
 ```
 
-## 🌐 SSR Support
+##  SSR Support
 
 All hooks are SSR-safe and work seamlessly with Next.js and other server-side rendering frameworks. Hooks that access browser APIs (like `window`, `localStorage`) automatically handle server-side rendering.
 
-## 🤝 Contributing
+##  Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
 
-## 📄 License
+##  License
 
 MIT © Md Shah Aman Patwary
 
-## 🔗 Links
+##  Links
 
 - [GitHub Repository](https://github.com/TAIJULAMAN/craftysoft-hooks)
 - [npm Package](https://www.npmjs.com/package/@craftysoft/hooks)
 
 ---
 
-Made with ❤️ by the CraftySoft team
+Made with ❤️ by the Md Shah Aman Patwary
