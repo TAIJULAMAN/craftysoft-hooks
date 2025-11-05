@@ -20,7 +20,6 @@ coverage/
 .env.production.local
 
 # IDE
-.vscode/
 .idea/
 *.swp
 *.swo
@@ -42,6 +41,10 @@ Thumbs.db
 # Temporary files
 *.tmp
 *.temp
-node _modules
+node_modules/
 dist
 
+branch_structure.json
+temp_auto_push.bat
+temp_interactive_push.bat
+.gitignore
