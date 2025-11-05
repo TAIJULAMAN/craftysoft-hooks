@@ -17,11 +17,11 @@ A professional, developer-friendly, and production-ready **React custom hooks li
 ## 📦 Installation
 
 ```bash
-npm install @craftysoft/hooks
+npm install craftysoft-hooks
 # or
-yarn add @craftysoft/hooks
+yarn add craftysoft-hooks
 # or
-pnpm add @craftysoft/hooks
+pnpm add craftysoft-hooks
 ```
 
 ## 🚀 Quick Start
