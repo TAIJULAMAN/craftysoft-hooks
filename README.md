@@ -27,7 +27,7 @@ pnpm add craftysoft-hooks
 ## 🚀 Quick Start
 
 ```tsx
-import { useLocalStorage, useDebounce, useToggle } from "@craftysoft/hooks";
+import { useLocalStorage, useDebounce, useToggle } from "craftysoft-hooks";
 
 function App() {
   const [theme, setTheme] = useLocalStorage("theme", "light");
