@@ -42,6 +42,6 @@ Thumbs.db
 # Temporary files
 *.tmp
 *.temp
-node _modules
+node_modules/
 dist
 
