@@ -1,6 +1,6 @@
 {
   "name": "@craftysoft/hooks",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A lightweight collection of essential React hooks for modern web apps.",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
