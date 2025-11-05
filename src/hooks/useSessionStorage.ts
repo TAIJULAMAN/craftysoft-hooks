@@ -1,31 +1,33 @@
 import { useState, useEffect, Dispatch, SetStateAction } from "react";
 
 /**
- * Store and sync data with localStorage.
+ * Manage sessionStorage data with React state synchronization.
+ * Similar to useLocalStorage but uses sessionStorage instead.
  * 
- * @param key - The localStorage key to store the value under
+ * @param key - The sessionStorage key to store the value under
  * @param initialValue - The initial value to use if no stored value exists
  * @returns A tuple containing the current value and a setter function
  * 
  * @example
  * ```tsx
- * const [theme, setTheme] = useLocalStorage("theme", "light");
+ * const [session, setSession] = useSessionStorage("sessionId", "");
  * 
  * return (
- *   <button onClick={() => setTheme("dark")}>
- *     Current: {theme}
- *   </button>
+ *   <div>
+ *     <p>Session: {session}</p>
+ *     <button onClick={() => setSession("abc123")}>Set Session</button>
+ *   </div>
  * );
  * ```
  */
-export function useLocalStorage<T>(
+export function useSessionStorage<T>(
   key: string,
   initialValue: T
 ): [T, Dispatch<SetStateAction<T>>] {
   const [value, setValue] = useState<T>(() => {
     if (typeof window === "undefined") return initialValue;
     try {
-      const stored = localStorage.getItem(key);
+      const stored = sessionStorage.getItem(key);
       return stored ? JSON.parse(stored) : initialValue;
     } catch {
       return initialValue;
@@ -35,7 +37,7 @@ export function useLocalStorage<T>(
   useEffect(() => {
     if (typeof window === "undefined") return;
     try {
-      localStorage.setItem(key, JSON.stringify(value));
+      sessionStorage.setItem(key, JSON.stringify(value));
     } catch (e) {
       // ignore write errors (e.g., storage full, sandboxed iframe)
     }
@@ -43,3 +45,4 @@ export function useLocalStorage<T>(
 
   return [value, setValue];
 }
+
